@@ -1,0 +1,133 @@
+body {
+  font-family: 'Della Respira', serif;
+  font-size: 1.1em;
+  color: darkcyan;
+  background-color: rgb(217, 235, 252);
+  background-image: url("bg.jpg");
+}
+
+.header {
+
+  padding: 10px 40px 10px 40px;
+  background-color: darkcyan;
+  position: fixed;
+  top: 20px;
+  left: 15%;
+  width: 70%;
+}
+
+.navbar ul {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.navbar li,
+a {
+  display: inline;
+  padding: 10px 10px;
+  text-decoration: none;
+  padding: 0 10px;
+  color: whitesmoke;
+  font-size: 1.2em;
+}
+
+.navbar li a:hover {
+  background-color: #25cc8c31;
+  color: white;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: #25cc8c;
+  color: white;
+  border-radius: 10px;
+}
+
+.main {
+  position: relative;
+  top: 100px;
+  left: 15%;
+  margin-top: 10px;
+  padding: 40px 40px;
+  width: 70%;
+  height: 400px;
+  border: 3px solid darkcyan;
+  background-color: aliceblue
+}
+
+.footer {
+  position: relative;
+  left: 15%;
+
+
+  padding: 40px 40px;
+  width: 70%;
+ 
+  border: 3px solid darkcyan;
+  background-color: darkcyan
+}
+
+.main p {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.main h3 {
+  border-bottom: 3px dashed #25cc8c;
+  border-right: 3px dashed #25cc8c;
+}
+
+/* Media querries */
+
+@media (max-width: 600px){
+  body{
+    font-size: 0.9em;
+  }
+
+  .header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%
+  }
+  
+  .navbar li, a {
+    display: block;
+  
+  }
+
+  .main {
+    position:relative;
+    top: 120px;
+    left: -8px;
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: -8px;
+  }
+}
+
+@media (min-width: 1024px) { 
+body {
+  background: aliceblue;
+  color: blue;
+}
+
+.main h3 {
+  font-size: 2rem;
+}
+
+.header, .main, .footer {
+  width: 60%;
+}
+
+
+}
